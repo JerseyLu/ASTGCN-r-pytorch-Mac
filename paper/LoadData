@@ -1,0 +1,28 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# pesm04_data = np.load('/Users/jerseylu/Downloads/ASTGCN-r-pytorch-master/data/PEMS04/PEMS04.npz')
+#
+# # input + label
+# print(pesm04_data.files)
+#
+# print(pesm04_data['data'].shape)
+# # (16992, 307, 3)
+# # 16992 = 59days * 24hours * 12times(Flow data is measured every five minutes), 307(num of tensors), 3(num of features)
+# # Features: traffic flow, speed, occupy
+# flow = pesm04_data['data'][:, 0, 0]
+# speed = pesm04_data['data'][:, 0, 1]
+# occupy = pesm04_data['data'][:, 0, 2]
+# fig = plt.figure(figsize=(15,5))
+# plt.title('traffic flow in San Francisco')
+# plt.xlabel('day')
+# plt.ylabel('flow')
+# plt.plot(np.arange(len(flow)), flow, linestyle='-')
+# plt.plot(np.arange(len(flow)), speed, linestyle='-')
+# plt.plot(np.arange(len(flow)), occupy, linestyle='-')
+# fig.autofmt_xdate(rotation=45)
+# plt.show()
+
+## dataset (after processing)
+file_data = np.load('/Users/jerseylu/Downloads/ASTGCN-r-pytorch-master/data/PEMS08/PEMS08_r1_d0_w0_astcgn.npz')
+print(file_data.files)
