@@ -80,7 +80,7 @@ PS: the explanation of "search_data" function in PrepareData.py
 <img src="https://user-images.githubusercontent.com/104020492/232291790-40c14ee7-6a6c-47d8-97f0-32cd6fa30773.jpeg" width="56%" height="56%" />
 </div>
 
-# Configuration
+## Configuration
 
 Step 1: The loss function and metrics can be set in the configuration file in ./configurations
 
@@ -98,7 +98,7 @@ metric_method can choose 'mask', 'unmask'. The metric with a mask does not evalu
 
 The missing_value is the missing identification, whose default value is 0.0
 
-# Datasets
+## Datasets
 
 
 - on PEMS04 dataset
@@ -115,7 +115,7 @@ The missing_value is the missing identification, whose default value is 0.0
 
 
 
-# Train and Test
+## Train and Test
 
 - on PEMS04 dataset
 
