@@ -72,6 +72,7 @@ This repository contains my personal notes and summaries on the field of Traffic
   $$
   \hat{Y}=W_h\odot\hat{Y_h}+W_d\odot\hat{Y_d}+W_w\odot\hat{Y_w}
   $$
+  
   The code is refer to [this](https://github.com/guoshnBJTU/ASTGCN-r-pytorch).  In addition, I made a small adjustment to the "DEVICE" function because the experiments I replicated were conducted on a Mac.
 
 PS: the explanation of "search_data" function in PrepareData.py
