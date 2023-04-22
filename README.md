@@ -35,11 +35,9 @@ This repository contains my personal notes and summaries on the field of Traffic
     $$
     
     Correlation Strength:
-    $$
-    \grave{E}_{i,j}= \frac{exp(E_{i,j})}{ \sum_{j=1} ^{T_{r-1}} exp(E_{i,j})}
-    $$
+    $$ \grave{E}_{i,j} = \frac{exp(E_{i,j})}{\sum_{j=1} ^{T_{r-1}} exp(E_{i,j})} $$
 
-* **Spatial-Temporal Convolution:**
+  * **Spatial-Temporal Convolution:**
 
   Propose: To model spatial-temporal dependencies of traffic data.
 
