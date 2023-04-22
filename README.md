@@ -19,11 +19,12 @@ This repository contains my personal notes and summaries on the field of Traffic
 
     Spatial Attention Matrix: 
     $$
-    S=V_s\cdot\sigma((\chi_h^{(r-1)}W_1)W_2(W_3\chi_h^{(r-1)})^T+b_s)
+    S=V_s \cdot \sigma(( \chi_h^{(r-1)}W_1)W_2(W_3 \chi_h^{(r-1)})^T+b_s)
     $$
+    
     Correlation Strength: 
     $$
-    S'_{i,j}=\frac{exp(S_{i,j})}{\sum_{j=1}^Nexp(S_{i,j})}
+    S'_{i,j}= \frac{exp(S_{i,j})}{ \sum_{j=1}^Nexp(S_{i,j})}
     $$
     Where $\chi_h^{r-1}=(X_1,X_2,...,X_{T_{r-1}})\in\mathbb{R}^{N\times C_{r-1}\times T_{r-1}}$ is the input of the $r^{th}$ spatial-temporal block. $C_{r-1}$ is the number of channels of the input data in the $r^{th}$ layer.
 
@@ -33,6 +34,7 @@ This repository contains my personal notes and summaries on the field of Traffic
     $$
     E=V_e\cdot\sigma(((\chi_h^{(r-1)})^TU_1)U_2(U_3\chi_h^{(r-1)})+b_e)
     $$
+    
     Correlation Strength:
     $$
     E'_{i,j}=\frac{exp(E_{i,j})}{\sum_{j=1}^{T_{r-1}}exp(E_{i,j})}
