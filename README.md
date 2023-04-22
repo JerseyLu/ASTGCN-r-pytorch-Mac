@@ -24,8 +24,9 @@ This repository contains my personal notes and summaries on the field of Traffic
     
     Correlation Strength: 
     $$
-    S'_{i,j}= \frac{exp(S_{i,j})}{ \sum_{j=1}^Nexp(S_{i,j})}
+    S'_{i,j}= \frac{exp(S_{i,j})}{ \sum_{j=1} ^N exp(S_{i,j})}
     $$
+    
     Where $\chi_h^{r-1}=(X_1,X_2,...,X_{T_{r-1}})\in\mathbb{R}^{N\times C_{r-1}\times T_{r-1}}$ is the input of the $r^{th}$ spatial-temporal block. $C_{r-1}$ is the number of channels of the input data in the $r^{th}$ layer.
 
   * **Temporal Attention:**
@@ -37,7 +38,7 @@ This repository contains my personal notes and summaries on the field of Traffic
     
     Correlation Strength:
     $$
-    E'_{i,j}= \frac{exp(E_{i,j})}{ \sum_{j=1} ^{T_{r-1}}exp(E_{i,j})}
+    E'_{i,j}= \frac{exp(E_{i,j})}{ \sum_{j=1} ^{T_{r-1}} exp(E_{i,j})}
     $$
 
 * **Spatial-Temporal Convolution:**
@@ -64,8 +65,9 @@ This repository contains my personal notes and summaries on the field of Traffic
   
     A standard convolution layer in the temporal dimension is further stacked to update the signal of a node by merging the information at the neighboring time slice.
     $$
-    \chi_h^{(r)}=ReLU( \phi*(ReLU(g_{ \theta*G} \hat{ \chi}_h^{(r-1)}))) \in \mathbb{R}^{C_r \times N \times T_r}
+    \chi_h ^{(r)}=ReLU( \phi * (ReLU(g_{ \theta * G} \hat{ \chi}_h ^{(r-1)}))) \in \mathbb{R} ^{C_r \times N \times T_r}
     $$
+    
     where $*$ denotes a standard convolution operation, $\phi$  is the parameters of the temporal dimension convolution kernel, and the activation function is $ReLU$.
 
 * **Multi-Component Fusion:**
