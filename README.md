@@ -37,7 +37,7 @@ This repository contains my personal notes and summaries on the field of Traffic
     
     Correlation Strength:
     $$
-    E'_{i,j}=\frac{exp(E_{i,j})}{\sum_{j=1}^{T_{r-1}}exp(E_{i,j})}
+    E'_{i,j}= \frac{exp(E_{i,j})}{ \sum_{j=1} ^{T_{r-1}}exp(E_{i,j})}
     $$
 
 * **Spatial-Temporal Convolution:**
@@ -64,7 +64,7 @@ This repository contains my personal notes and summaries on the field of Traffic
   
     A standard convolution layer in the temporal dimension is further stacked to update the signal of a node by merging the information at the neighboring time slice.
     $$
-    \chi_h^{(r)}=ReLU(\phi*(ReLU(g_{\theta*G}\hat{\chi}_h^{(r-1)})))\in \mathbb{R}^{C_r\times N \times T_r}
+    \chi_h^{(r)}=ReLU( \phi*(ReLU(g_{ \theta*G} \hat{ \chi}_h^{(r-1)}))) \in \mathbb{R}^{C_r \times N \times T_r}
     $$
     where $*$ denotes a standard convolution operation, $\phi$  is the parameters of the temporal dimension convolution kernel, and the activation function is $ReLU$.
 
