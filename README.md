@@ -24,7 +24,7 @@ This repository contains my personal notes and summaries on the field of Traffic
     
     Correlation Strength: 
     $$
-    S'_{i,j}= \frac{exp(S_{i,j})}{ \sum_{j=1} ^N exp(S_{i,j})}
+    S'_{i,j}= \frac{exp(S_{i,j})}{ \sum_{j=1}^N exp(S_{i,j})}
     $$
     
     Where $\chi_h^{r-1}=(X_1,X_2,...,X_{T_{r-1}})\in\mathbb{R}^{N\times C_{r-1}\times T_{r-1}}$ is the input of the $r^{th}$ spatial-temporal block. $C_{r-1}$ is the number of channels of the input data in the $r^{th}$ layer.
